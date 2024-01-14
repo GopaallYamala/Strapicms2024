@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_recommended_article_recommendeds",
+  "info": {
+    "displayName": "Recommended",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "resource_articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::resource-article.resource-article"
+    }
+  }
+}

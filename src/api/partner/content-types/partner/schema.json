@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partners",
+  "info": {
+    "singularName": "partner",
+    "pluralName": "partners",
+    "displayName": "Partner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PartnerWith": {
+      "type": "string"
+    },
+    "UploadLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "resource_articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::resource-article.resource-article",
+      "mappedBy": "partner"
+    }
+  }
+}
